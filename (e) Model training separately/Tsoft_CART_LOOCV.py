@@ -37,13 +37,13 @@ for index, row in non_empty_df.iterrows():
     train_target = non_empty_df.drop(index)['Tsoft']
 
     # Create a DecisionTree regression model.
-    rf_model = DecisionTreeRegressor()
+    cart_model = DecisionTreeRegressor()
 
     # Fit the model.
-    rf_model.fit(train_features, train_target)
+    cart_model.fit(train_features, train_target)
 
     # Make predictions.
-    prediction = rf_model.predict(test_features)
+    prediction = cart_model.predict(test_features)
 
     # Store the predicted results and the actual values.
     all_predictions.append(prediction)
@@ -68,4 +68,4 @@ print("Relative Difference (%):", rd)
 print("R^2 Score:", r2)
 # Save the model as a pickle file.
 with open('../model/individual_prediction/Tsoft_CART_model.pickle', 'wb') as file:
-    pickle.dump(rf_model, file)
+    pickle.dump(cart_model, file)
