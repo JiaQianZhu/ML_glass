@@ -8,7 +8,7 @@ import pickle
 import pandas as pd
 
 
-data = pd.read_csv('../data/raw/data.csv')
+data = pd.read_csv('../(a-d) Datasets/raw/data.csv')
 
 with open('../model/individual_prediction/Young_knn_model.pickle', 'rb') as file:
     knn_model = pickle.load(file)
