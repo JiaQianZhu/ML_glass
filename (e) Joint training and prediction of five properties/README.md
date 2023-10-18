@@ -1,0 +1,2 @@
+We split the dataset into proportions of 64:20:16 for training, testing, and validation sets, respectively. 
+In this study, we compared three machine learning algorithms: Random Forest (RF), Classification and Regression Trees (CART), and k-Nearest Neighbors (k-NN) using five evaluation metrics, including Mean Squared Error (MSE), Mean Absolute Error (MAE), Median Absolute Error (MedAE), Relative Deviation (RD), and R-squared (R2).
