@@ -1,8 +1,7 @@
 """
 Author:JiaQian Zhu
 Date:2023-8-17
-Usage:This module offers method to fill in the missing values of Young's Modulus
-in the original dataset with trained knn model.
+Usage:This module offers method to fill in the missing values of Young's Modulus in the original dataset with trained knn model.
 """
 
 import pickle
