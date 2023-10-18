@@ -23,7 +23,7 @@ train_features, test_features, train_targets, test_targets = train_test_split(fe
 train_features, val_features, train_targets, val_targets = train_test_split(train_features, train_targets, test_size=0.2, random_state=42)
 
 # Create a K-Nearest Neighbors (KNN) regression model.
-knn_model = KNeighborsRegressor(n_neighbors=5)  # You can adjust the number of neighbors (K) as needed.
+knn_model = KNeighborsRegressor(n_neighbors=5)  
 
 # Fit the model on the training set.
 knn_model.fit(train_features, train_targets)
