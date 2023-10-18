@@ -31,7 +31,7 @@ def generate_oxide_ratio():
     return [sio2, al2o3, cao, mgo, sro, b2o3, sb2o3]
 
 
-# 加载模型
+# load the model
 with open('model/joint_prediction/rf_model.pickle', 'rb') as file:
     rf_model = pickle.load(file)
 
@@ -50,9 +50,9 @@ filtered_data = pd.DataFrame(columns=['SiO2', 'Al2O3', 'CaO', 'MgO', 'SrO', 'B2O
 
 num_samples = 50000
 # Design oxide ratios and predict target values.
-for _ in range(num_samples):  # 根据需要的样本数量进行循环
+for _ in range(num_samples):  
     # Design oxide proportions.
-    oxide_ratio = generate_oxide_ratio()  # 根据实际情况进行调整
+    oxide_ratio = generate_oxide_ratio()  
 
     # Predict target values.
     features = [oxide_ratio]
