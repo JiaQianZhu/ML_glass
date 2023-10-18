@@ -13,7 +13,7 @@ import matplotlib.font_manager as fm
 
 font_prop = fm.FontProperties(weight='bold', size=16)
 
-data = pd.read_csv('../data/clean/dataset_completed.csv')
+data = pd.read_csv('../(a-d) Datasets/clean/dataset_completed.csv')
 features = data[['SiO2', 'Al2O3', 'CaO', 'MgO', 'SrO', 'B2O3', 'Sb2O3']]
 targets = ['YoungModulus', 'Density293K', 'CTEbelowTg', 'Tstrain', 'Tsoft']
 
