@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 from sklearn.model_selection import train_test_split, KFold
-from sklearn.tree import DecisionTreeRegressor  # 导入CART模型
+from sklearn.tree import DecisionTreeRegressor  
 from sklearn.metrics import mean_squared_error, mean_absolute_error, median_absolute_error, r2_score
 
 # Load the dataset
@@ -21,7 +21,7 @@ train_features, test_features, train_target, test_target = train_test_split(feat
                                                                             random_state=42)
 
 # Create a Decision Tree regression model (CART)
-cart_model = DecisionTreeRegressor()  # 将 RandomForestRegressor 更改为 DecisionTreeRegressor
+cart_model = DecisionTreeRegressor()  
 
 # Initialize K-fold cross-validation
 kf = KFold(n_splits=10, shuffle=True, random_state=42)
