@@ -8,7 +8,7 @@ import pickle
 import pandas as pd
 
 
-data = pd.read_csv('../data/raw/data.csv')
+data = pd.read_csv('../(a-d) Datasets/raw/data.csv')
 
 
 with open('../model/individual_prediction/CTE_rf_model.pickle', 'rb') as file:
