@@ -1,3 +1,8 @@
+"""
+Author:JiaQian Zhu
+Date:2023-8-17
+Usage:This module offers method to filter out the non-missing portions of CTE and conduct training using the RF algorithm with a 10-fold cv.
+"""
 import pickle
 import numpy as np
 import pandas as pd
