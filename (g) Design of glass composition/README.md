@@ -1,2 +1,3 @@
-In this part, we design a alogrithm to generate a series of possible ratios using joint prediction model.
+In this section, we have developed an alogrithm to generate a series of potential ratios using a joint prediction model while adhering to the following constraints:
 We establish a target objective for advanced glass substrates, aiming to achieve optimal TPV performance as outlined below: density ≤ 2.5 g/cm³, CTE ranging from 3.3×10-6/K to 3.9×10-6/K, Young's modulus ≥ 80 GPa, Tstrain ≥ 993.15 K and Tsoft ≥ 1273.15 K.
+Based on the design experience derived from the US patent released by Corning Incorporated and the aforementioned SHAP analysis, we define the following ranges for the oxide weight ratios: SiO2 should be within 65% to 73%, Al2O3 between 10% and 14%, CaO ranging from 3% to 9%, MgO ranging from 2% to 6%, SrO within 0% to 6%, B2O3 between 3% and 8%, and Sb2O3 within 0% to 1%.
