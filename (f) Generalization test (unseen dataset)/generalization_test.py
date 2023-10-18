@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 
 # Load the data_pred.
-data = pd.read_csv('data/US_patent_data.csv')
+data = pd.read_csv('../(a-d) Datasets/US_patent_data.csv')
 
 # Define input features and target variables.
 features = data[['SiO2', 'Al2O3', 'CaO', 'MgO', 'SrO', 'B2O3', 'Sb2O3']]
